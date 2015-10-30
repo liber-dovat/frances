@@ -12,9 +12,9 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: japones_development
+  database: frances_development
   pool: 5
-  username: japones
+  username: frances
   password: password1
 
 # Warning: The database defined as "test" will be erased and
@@ -23,15 +23,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: japones_test
+  database: frances_test
   pool: 5
-  username: japones
+  username: frances
   password: password1
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: japones_production
+  database: frances_production
   pool: 5
-  username: japones
+  username: frances
   password: password1
