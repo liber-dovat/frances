@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :palabras
+
   get 'inicio/index'
   get 'inicio/siguiente'
 

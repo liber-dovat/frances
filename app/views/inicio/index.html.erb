@@ -2,39 +2,6 @@
 <div class="container">
    <div class="row clearfix">
       <div class="col-md-12 column">
-         <div class="row clearfix">
-            <nav class="navbar navbar-fixed-top" id="header">
-                <div class="col-lg-6
-                            col-md-8
-                            col-xs-12
-                            center-block" id="menu">
-<!--                             TEXTO -->
-                    <div id="nivelDiv">
-                        <div id="nivelGrupo" class="contenido">
-                            <div class="btn-group-vertical btn-block">
-                                <a class="btn btn-default" href="#">N1</a>
-                                <a class="btn btn-default" href="#">N2</a>
-                                <a class="btn btn-default" href="#">N3</a>
-                                <a class="btn btn-default" href="#">N4</a>
-                                <a class="btn btn-default active" href="#">N5</a>
-                            </div>
-                        </div>
-                        <%= image_tag("tab_n5.svg", :alt => "svg nivel", class: "btn", id: "nivel") %>
-                    </div>
-                    
-                    <div id="tipoDiv">
-                        <div id="tipoGrupo" class="contenido">
-                            <div class="btn-group-vertical btn-block">
-                                <a class="btn btn-default" href="#">Kanji</a>
-                                <a class="btn btn-default active" href="#">Hiragana</a>
-                            </div>
-                        </div>
-                        <%= image_tag("tab_hiragana.svg", :alt => "svg tipo", class: "btn", id: "tipo") %>
-                    </div>
-                </div>
-            </nav>
-         </div>
-
          <div class="row clearfix ventana">
             <div id="palabra" class="col-xs-12 col-md-12 column palabra">
               <%= @palabra["mot"]%>
@@ -71,11 +38,11 @@
                             <div>
                                 <div class="col-md-5 col-md-push-1 col-xs-5 col-xs-push-1 column header">
                                     <div class="info" id="infoMot"></div>
-                                    Hiragana
+                                    
                                 </div>
                                 <div class="col-md-5 col-md-push-1 col-xs-5 col-xs-push-1 column header">
                                     <div class="info" id="infoRomaji"></div>
-                                    Romaji
+                                    
                                 </div>
                             </div>
                         </div>
@@ -87,7 +54,7 @@
                             </div>-->
                             <div class="pull-right hNivelDiv">
                                 <div class="hNivel" id="infoNivel">N</div>
-                                Nivel
+                                
                             </div>
                         </div>
                         

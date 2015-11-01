@@ -1,10 +1,18 @@
 /* Fuentes */
 
+body {
+  background-color: #002366;
+}
+
+.btn-default {
+  background-color: #002366;
+}
+
 .header {
   text-align: center;
 }
 
-.kanji {
+.palabra {
   font-size: 14vh;
   text-align: center;
   color: #e6e6e6;
@@ -90,7 +98,7 @@ h2 {
 .contenido {
     margin-bottom: -0.2vh;
     padding-bottom: 2vh;
-    background: #0072BB;
+    background: #4e5d6c;
     
    -webkit-border-bottom-left-radius: 20px;
    -webkit-border-bottom-right-radius: 20px;

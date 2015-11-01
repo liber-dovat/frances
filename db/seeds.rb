@@ -36,3 +36,11 @@
 # heroku run:detached rake cache:clear
 
 Palabra.create(mot: "Un", definicion: "Uno", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Deux", definicion: "Dos", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Troi", definicion: "Tres", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Quatre", definicion: "Cuatro", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Cinq", definicion: "Cinco", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Six", definicion: "Seis", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Sept", definicion: "Siete", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Huit", definicion: "Ocho", ejemplo1: "", ejemplo2: "")
+Palabra.create(mot: "Neuf", definicion: "Nueve", ejemplo1: "", ejemplo2: "")
