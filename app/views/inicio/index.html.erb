@@ -36,8 +36,8 @@
          </div>
 
          <div class="row clearfix ventana">
-            <div id="kanji" class="col-xs-12 col-md-12 column kanji">
-              <%= @kanji["kanji"]%>
+            <div id="palabra" class="col-xs-12 col-md-12 column palabra">
+              <%= @palabra["mot"]%>
             </div>
             <div class="row clearfix">
                <div class="col-xs-12 col-md-12 column">
@@ -66,15 +66,15 @@
                   </div>-->
                   <div class="col-md-6 col-md-push-3 column" id="panelRespuesta">
                      <div>
-                        <h2 id="infoDefinicion"><%= @kanji["definicion"]%></h2>
+                        <h2 id="infoDefinicion"><%= @palabra["definicion"]%></h2>
                         <div class="row clearfix">
                             <div>
                                 <div class="col-md-5 col-md-push-1 col-xs-5 col-xs-push-1 column header">
-                                    <div class="info" id="infoHiragana"><%= @kanji["hiragana"]%></div>
+                                    <div class="info" id="infoMot"></div>
                                     Hiragana
                                 </div>
                                 <div class="col-md-5 col-md-push-1 col-xs-5 col-xs-push-1 column header">
-                                    <div class="info" id="infoRomaji"><%= @kanji["romaji"]%></div>
+                                    <div class="info" id="infoRomaji"></div>
                                     Romaji
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                 Nivel
                             </div>-->
                             <div class="pull-right hNivelDiv">
-                                <div class="hNivel" id="infoNivel">N<%= @kanji["nivel"]%></div>
+                                <div class="hNivel" id="infoNivel">N</div>
                                 Nivel
                             </div>
                         </div>
@@ -151,17 +151,14 @@
             var msg = JSON.parse(result);
 //             console.log("inicio/siguiente");
             console.log(msg);
-            $("#kanji").empty();
+            $("#palabra").empty();
             $("#infoDefinicion").empty();
             $("#infoHiragana").empty();
             $("#infoRomaji").empty();
             $("#infoNivel").empty();
             
-            $("#kanji").append(msg.kanji);
+            $("#palabra").append(msg.mot);
             $("#infoDefinicion").append(msg.definicion);
-            $("#infoHiragana").append(msg.hiragana);
-            $("#infoRomaji").append(msg.romaji);
-            $("#infoNivel").append("N" + msg.nivel);
          }
       }); // ajax
    }
